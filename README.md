@@ -5,9 +5,7 @@ Na internet, desconfiar também é se proteger!
 📌 Sobre o projeto
 
 O Detetives Digitais é um projeto educativo desenvolvido com o objetivo de conscientizar e orientar pessoas idosas sobre os principais golpes praticados nas redes sociais, especialmente no Instagram e no TikTok.
-
 A proposta é apresentar informações de maneira simples, acessível e interativa, ajudando o público a identificar mensagens suspeitas, perfis falsos, links maliciosos, falsas promoções e tentativas de fraude financeira.
-
 Por meio de conteúdos educativos e missões interativas, o usuário aprende a reconhecer situações de risco e a adotar comportamentos mais seguros no ambiente digital.
 
 🎯 Objetivo geral
@@ -26,13 +24,11 @@ Desenvolver um site educativo que auxilie pessoas idosas a identificar e preveni
 👥 Público-alvo
 
 Pessoas idosas que utilizam ou desejam aprender a utilizar redes sociais e outras ferramentas digitais, especialmente Instagram e TikTok.
-
 O conteúdo foi pensado para facilitar a compreensão, utilizando linguagem simples, orientações objetivas e elementos visuais.
 
 💻 Tecnologias utilizadas
 
 O projeto foi desenvolvido utilizando tecnologias fundamentais para aplicações web:
-
 Tecnologia	Aplicação
 HTML5	Estruturação das páginas e conteúdos
 CSS3	Estilização, cores, layout e responsividade
@@ -42,13 +38,10 @@ GitHub	Versionamento e armazenamento do código-fonte
 ✨ Funcionalidades do sistema
 
 1. Página inicial
-
 Apresenta o projeto, sua proposta educativa e um convite para iniciar a investigação digital.
-
 2. Conteúdos educativos
 
 O site apresenta quatro áreas de conteúdo:
-
 * Mensagens suspeitas: orientações para identificar tentativas de golpes por mensagens.
 * Desafios digitais: informações e situações para desenvolver o pensamento crítico.
 * Golpes nas redes: exemplos de fraudes comuns em redes sociais.
@@ -72,7 +65,6 @@ As missões abordam:
 4. Sistema de pontuação
 
 Cada resposta correta vale 10 pontos, totalizando até 60 pontos.
-
 Ao finalizar as seis missões, o usuário recebe um resultado de acordo com sua pontuação:
 
 * 🥇 Detetive de elite.
@@ -83,11 +75,9 @@ Ao finalizar as seis missões, o usuário recebe um resultado de acordo com sua 
 A pontuação é calculada durante a utilização da página e não é armazenada permanentemente.
 
 5. Área de ajuda
-
 Apresenta orientações práticas para que o usuário possa se proteger durante a navegação na internet.
 
 6. Design responsivo
-
 O layout foi desenvolvido para se adaptar a diferentes tamanhos de tela, incluindo computadores, tablets e celulares.
 
 🎨 Identidade visual
@@ -124,7 +114,6 @@ detetives-digitais/
 O projeto não necessita de instalação de servidor ou banco de dados para sua execução.
 
 Passo a passo:
-
 1. Faça o download ou clone o repositório.
 2. Extraia os arquivos, caso tenha baixado um arquivo compactado.
 3. Abra a pasta detetives-digitais.
@@ -134,15 +123,12 @@ Passo a passo:
 Clonar o repositório
 
 Também é possível obter o projeto utilizando Git:
-
 git clone https://github.com/EmyCardoso/detetives-digitais.git
-
 Depois, abra a pasta do projeto no computador e execute o arquivo index.html.
 
 🔐 Importância da segurança digital
 
 O projeto reforça boas práticas de segurança, como:
-
 * Não compartilhar senhas ou códigos de verificação.
 * Não clicar em links desconhecidos.
 * Conferir a identidade de pessoas que solicitam dinheiro.
@@ -153,7 +139,6 @@ O projeto reforça boas práticas de segurança, como:
 📚 Finalidade educacional
 
 O Detetives Digitais possui finalidade educativa e preventiva. Os exemplos apresentados são fictícios e foram elaborados para simular situações comuns de tentativas de golpes digitais.
-
 O sistema não realiza transações financeiras, não solicita dados bancários e não substitui orientações oficiais de segurança digital.
 
 🔮 Possíveis melhorias futuras
@@ -171,7 +156,5 @@ Categoria: Projeto acadêmico de extensão
 Tema: Educação e segurança digital para pessoas idosas
 Desenvolvimento: HTML5, CSS3 e JavaScript
 Professor orientador: Nelson Oliveira
-
-⸻
 
 Detetives Digitais — Na internet, desconfiar também é se proteger! 🔎💜
