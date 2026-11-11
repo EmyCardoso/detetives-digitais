@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#190D3D">
+  <meta name="description" content="Aprenda a identificar golpes digitais no Instagram e TikTok.">
+  <title>Detetives Digitais</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="topo" id="inicio">
+  <div class="topo-conteudo">
+    <a class="marca" href="#inicio" aria-label="Detetives Digitais - Início">
+      <span class="logo">🔎</span>
+      <span>
+                <small>APRENDA • INVESTIGUE • PROTEJA-SE</small>
+                <strong>Detetives Digitais</strong>
+            </span>
+    </a>
+
+    <button class="menu-mobile" id="menu-mobile"
+            aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+    <nav class="menu" id="menu">
+      <a href="#inicio">Início</a>
+      <a href="#aprenda">Aprenda</a>
+      <a href="#missoes">Missões</a>
+      <a href="#ajuda">Ajuda</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-texto">
+      <span class="selo">🏆 CENTRAL DE INVESTIGAÇÃO DIGITAL</span>
+      <h1>Na internet, <span>desconfiar também é se proteger!</span></h1>
+      <p>
+        Aprenda a reconhecer golpes no Instagram e no TikTok
+        de um jeito simples, divertido e seguro.
+      </p>
+      <a class="botao botao-amarelo" href="#missoes">
+        🔎 Começar minha investigação
+      </a>
+      <div class="hero-detalhe">
+        <span>✓ Conteúdo gratuito</span>
+        <span>✓ Fácil de aprender</span>
+        <span>✓ Sem cadastro</span>
+      </div>
+    </div>
+
+    <div class="hero-ilustracao" aria-hidden="true">
+      <div class="circulo-grande">
+        <div class="lupa">🔍</div>
+        <span class="flutuante flutuante-1">⚠️</span>
+        <span class="flutuante flutuante-2">🛡️</span>
+        <span class="flutuante flutuante-3">🔐</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao" id="aprenda">
+    <div class="titulo-secao">
+      <span class="selo">🧠 ÁREA DE APRENDIZADO</span>
+      <h2>Escolha sua investigação</h2>
+      <p>Selecione um tema para descobrir como se proteger.</p>
+    </div>
+
+    <div class="cartoes">
+      <button class="cartao" data-modal="mensagens">
+        <span class="icone-cartao amarelo">💬</span>
+        <span class="cartao-titulo">Mensagens suspeitas</span>
+        <span class="cartao-descricao">
+                    Reconheça pedidos de dinheiro e mensagens falsas.
+                </span>
+        <span class="cartao-link">Investigar assunto →</span>
+      </button>
+
+      <button class="cartao" data-modal="desafios">
+        <span class="icone-cartao azul">🛡️</span>
+        <span class="cartao-titulo">Desafios digitais</span>
+        <span class="cartao-descricao">
+                    Teste seus conhecimentos e aprenda com as respostas.
+                </span>
+        <span class="cartao-link">Investigar assunto →</span>
+      </button>
+
+      <button class="cartao" data-modal="redes">
+        <span class="icone-cartao rosa">📱</span>
+        <span class="cartao-titulo">Golpes nas redes</span>
+        <span class="cartao-descricao">
+                    Identifique armadilhas no Instagram e no TikTok.
+                </span>
+        <span class="cartao-link">Investigar assunto →</span>
+      </button>
+
+      <button class="cartao" data-modal="detetive">
+        <span class="icone-cartao amarelo">🏆</span>
+        <span class="cartao-titulo">Seja um detetive</span>
+        <span class="cartao-descricao">
+                    Pratique, acumule pontos e conquiste sua medalha.
+                </span>
+        <span class="cartao-link">Investigar assunto →</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="secao secao-jogo" id="missoes">
+    <div class="titulo-secao">
+      <span class="selo">🎯 CENTRAL DE DESAFIOS</span>
+      <h2>Está preparado para investigar?</h2>
+      <p>Leia cada situação e escolha a atitude mais segura.</p>
+    </div>
+
+    <div class="painel-jogo" id="painel-jogo">
+      <div class="jogo-inicio" id="jogo-inicio">
+        <div class="jogo-icone">🕵️</div>
+        <h3>Sua primeira missão está esperando!</h3>
+        <p>
+          São seis situações do dia a dia para você aprender
+          a identificar possíveis golpes digitais.
+        </p>
+        <div class="resumo-jogo">
+          <span>🎯 6 missões</span>
+          <span>⭐ Até 60 pontos</span>
+          <span>🏅 Medalha final</span>
+        </div>
+        <button class="botao botao-amarelo" id="iniciar-jogo">
+          Começar desafio
+        </button>
+      </div>
+
+      <div class="jogo-pergunta" id="jogo-pergunta" hidden>
+        <div class="jogo-topo">
+          <span id="numero-pergunta">MISSÃO 1 DE 6</span>
+          <span id="pontos">⭐ 0 pontos</span>
+        </div>
+
+        <div class="barra-fundo">
+          <div class="barra-progresso" id="barra-progresso"></div>
+        </div>
+
+        <span class="categoria" id="categoria">MENSAGENS SUSPEITAS</span>
+        <h3 id="pergunta"></h3>
+
+        <div class="opcoes" id="opcoes"></div>
+
+        <div class="feedback" id="feedback"
+             role="status" aria-live="polite" hidden></div>
+
+        <button class="botao botao-amarelo" id="proxima"
+                hidden>Próxima missão →</button>
+      </div>
+
+      <div class="resultado-final" id="resultado-final" hidden>
+        <div class="medalha" id="medalha">🏆</div>
+        <span class="selo">INVESTIGAÇÃO CONCLUÍDA</span>
+        <h3 id="titulo-final">Parabéns, detetive!</h3>
+        <p id="texto-final"></p>
+        <div class="pontuacao-final" id="pontuacao-final"></div>
+        <button class="botao botao-amarelo" id="jogar-novamente">
+          🔄 Jogar novamente
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="secao ajuda" id="ajuda">
+    <div class="titulo-secao">
+      <span class="selo">💜 PROTEÇÃO DIGITAL</span>
+      <h2>Suspeitou de um golpe? E agora?</h2>
+      <p>Respire, não tenha pressa e siga estas orientações.</p>
+    </div>
+
+    <div class="passos-ajuda">
+      <article class="passo">
+        <span>01</span>
+        <div>
+          <h3>Não clique</h3>
+          <p>Evite abrir links suspeitos ou baixar arquivos desconhecidos.</p>
+        </div>
+      </article>
+
+      <article class="passo">
+        <span>02</span>
+        <div>
+          <h3>Não compartilhe dados</h3>
+          <p>Nunca informe senhas, códigos de verificação ou dados bancários.</p>
+        </div>
+      </article>
+
+      <article class="passo">
+        <span>03</span>
+        <div>
+          <h3>Confirme as informações</h3>
+          <p>Procure o perfil ou a empresa por um canal oficial e conhecido.</p>
+        </div>
+      </article>
+
+      <article class="passo">
+        <span>04</span>
+        <div>
+          <h3>Peça ajuda</h3>
+          <p>Converse com alguém de confiança e denuncie o perfil suspeito na plataforma.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="aviso-ajuda">
+      <span>💡</span>
+      <p>
+        Se você já fez um pagamento suspeito, entre em contato
+        imediatamente com seu banco pelos canais oficiais.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-logo">🔎 Detetives Digitais</div>
+  <p>Aprender para se proteger. Informação é sua melhor defesa!</p>
+  <small>Projeto educativo desenvolvido para conscientização sobre golpes digitais.</small>
+</footer>
+
+<!-- JANELA PERSONALIZADA DOS CARTÕES -->
+<div class="modal-fundo" id="modal-fundo" hidden>
+  <section class="modal" role="dialog" aria-modal="true"
+           aria-labelledby="modal-titulo">
+    <button class="modal-fechar" id="modal-fechar"
+            aria-label="Fechar janela">×</button>
+    <div class="modal-icone" id="modal-icone">💬</div>
+    <span class="selo">GUIA DO DETETIVE</span>
+    <h2 id="modal-titulo"></h2>
+    <p id="modal-texto"></p>
+    <div class="modal-dica" id="modal-dica"></div>
+    <button class="botao botao-amarelo" id="modal-ok">
+      Entendi!
+    </button>
+  </section>
+</div>
+
+</body>
+</html>s
